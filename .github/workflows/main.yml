@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -54,7 +54,7 @@ jobs:
       - run: git config --global user.name "half-blood-prince"
       - run: git add .
       - run: git commit -m "Automated commit from github actions. ID = ${{ github.run_id }}"
-      - run: git push origin gh-pages 
+      - run: git push origin site 
       - run: echo Deployed the lateset changes
       
       
