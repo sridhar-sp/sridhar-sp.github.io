@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch --all
-      - run: git checkout gh-pages
+      - run: git checkout site
       - name: Download a single artifact
         uses: actions/download-artifact@v2
         with:
