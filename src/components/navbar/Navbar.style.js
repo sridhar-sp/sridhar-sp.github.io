@@ -1,17 +1,10 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const Navbar = styled.nav`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #eee;
-`
-
 const NavList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 0.9rem;
   margin-left: 4rem;
 `
 
@@ -27,8 +20,16 @@ const RouteLink = styled(Link)`
   }
 
   :hover {
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
   }
+  transition: letter-spacing 0.1s ease-in;
+
+  color: ${({ theme }) => theme.colors.primaryText};
+
+  /* color: ${({ theme, isSelected }) =>
+    isSelected ? theme.colors.primaryText : theme.colors.secondaryText}; */
+
+  ${({ isSelected }) => isSelected && `font-weight: bold;`}
 `
 
-export { Navbar, RouteLink, NavList }
+export { RouteLink, NavList }
