@@ -12,14 +12,14 @@ import { LandingPageContainer } from './App.style'
 const App = () => {
   const [themeMode, setThemeMode] = useState('light')
   const toggleTheme = () => {
-    setThemeMode((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'))
+    setThemeMode((themeMode) => (themeMode === 'dark' ? 'light' : 'dark'))
   }
   const currentTheme = getTheme(themeMode)
   return (
     <ThemeProvider theme={currentTheme}>
       <LandingPageContainer>
         <Router>
-          <Navbar onChangeTheme={toggleTheme} />
+          <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
           <Switch>
             <Route path="/" exact>
               <Home />

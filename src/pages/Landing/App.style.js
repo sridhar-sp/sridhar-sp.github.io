@@ -2,11 +2,17 @@ import styled, { keyframes } from 'styled-components'
 
 const LandingPageContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.2fr 0.8fr;
   height: 100vh;
   overflow-x: hidden;
 
   background-color: ${({ theme }) => theme.colors.background};
+
+  @media (max-width: 768px) {
+    grid-template-rows: auto 1fr;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: auto 1fr;
+  }
 `
 
 const NavbarContainer = styled.nav`
