@@ -38,19 +38,21 @@ const ProfileImageContainer = styled.div`
   width: 16rem;
   height: 16rem;
   overflow: hidden;
-  border-radius: 50%;
 
+  border-radius: 50%;
   border-width: 0.3rem;
   border-style: solid;
   border-color: #ffffff;
 
+  display: flex;
+  justify-content: center;
+  
   /* animation: ${morph} 8s ease-in-out 1s infinite; */
 `
 
 const ProfileImage = styled.img`
   width: auto;
   height: 100%;
-  margin-left: -4rem;
 `
 
 const ProfileDescription = styled.div`
