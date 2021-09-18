@@ -1,6 +1,6 @@
 {
-  "name": "portfolio-template",
-  "homepage": "https://sridhar-sp.github.io/sridhar-sp.github.io",
+  "name": "sridhar-portfolio",
+  "homepage": "https://sridhar-sp.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

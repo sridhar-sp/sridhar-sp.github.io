@@ -9,8 +9,8 @@ Personal portfolio web app built using React.
 
 ## Install :electric_plug:
 
-    $ git clone https://github.com/sridhar-sp/portfolio-template
-    $ cd portfolio-template
+    $ git clone https://github.com/sridhar-sp/sridhar-sp.github.io
+    $ cd sridhar-sp.github.io
     $ yarn install
 
 ## Available Scripts :scroll:
