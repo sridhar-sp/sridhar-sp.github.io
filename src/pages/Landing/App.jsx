@@ -21,9 +21,6 @@ const App = () => {
         <Router>
           <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
           <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -32,6 +29,9 @@ const App = () => {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/">
+              <Home theme={currentTheme} />
             </Route>
           </Switch>
         </Router>

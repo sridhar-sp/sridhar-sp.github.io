@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { Constants } from 'pages/Landing/App.style'
 
 const ThemeModeIcon = styled.div`
   justify-self: flex-end;
   margin: 1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     align-self: center;
   }
 `
@@ -15,11 +16,11 @@ const NavBar = styled.div`
   height: 100%;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     flex-direction: row;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
     flex-direction: column-reverse;
     flex-direction: row;
   }
@@ -32,7 +33,7 @@ const NavList = styled.div`
   flex: 1;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     flex-direction: row;
     column-gap: 0.9rem;
     min-height: 5rem;
@@ -40,7 +41,7 @@ const NavList = styled.div`
     align-content: center; //main-axis
     justify-content: space-around;
   }
-  @media (min-width: 768px) {
+  @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
     flex-direction: column;
     row-gap: 0.9rem;
     min-width: 14rem; // 1 rem padding in Theme Icon. Total 15 rem left side navigation bar width

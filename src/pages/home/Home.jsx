@@ -1,23 +1,38 @@
 import React from 'react'
 import { ContentContainer } from '../Landing/App.style'
-const Home = () => {
+import {
+  HomeContainer,
+  ProfileImageContainer,
+  ProfileImage,
+  ProfileDescription,
+  ProfileName,
+  ShortBio,
+  SocialLinks,
+  Twitter,
+  Linkedin,
+  Github,
+} from './Home.style'
+const Home = ({ theme }) => {
   return (
     <ContentContainer>
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        felis arcu, finibus et ligula nec, tristique euismod odio. Quisque non
-        diam eu neque viverra mattis quis vitae libero. Suspendisse sed
-        condimentum dolor, eget sodales elit. In efficitur tempus lacus eget
-        euismod. Morbi sed velit ultrices, vulputate ante ac, lacinia leo.
-        Suspendisse malesuada pretium sollicitudin. Vestibulum viverra ut est et
-        efficitur. Pellentesque fringilla vestibulum neque, vitae elementum leo
-        pulvinar ac. Cras interdum leo leo, facilisis consectetur nibh maximus
-        ut. Quisque iaculis ligula at felis pretium gravida. Proin tincidunt,
-        velit sed dignissim rhoncus, felis mi feugiat justo, non suscipit libero
-        neque sit amet diam. Quisque sit amet finibus lorem, ut placerat est.
-        Proin quis tempor elit, nec feugiat lacus. Mauris in vestibulum leo.
-        Pellentesque sapien risus, molestie ac convallis et, feugiat non urna.
-      </h1>
+      <HomeContainer>
+        <ProfileImageContainer>
+          <ProfileImage src="https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg" />
+        </ProfileImageContainer>
+        <ProfileDescription>
+          <ProfileName>Sridhar Subramani</ProfileName>
+          <ShortBio>
+            Self-taught software developer with great problem-solving skills,
+            having 5+ years of craftsmanship in developing awesome android
+            applications.
+          </ShortBio>
+          <SocialLinks>
+            <Github />
+            <Linkedin />
+            <Twitter />
+          </SocialLinks>
+        </ProfileDescription>
+      </HomeContainer>
     </ContentContainer>
   )
 }
