@@ -12,9 +12,11 @@ const HomeContainer = styled.div`
 
   @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     flex-direction: column;
+    row-gap: 2rem;
   }
   @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
     flex-direction: row;
+    column-gap: 4rem;
   }
 `
 
@@ -60,9 +62,6 @@ const ProfileDescription = styled.div`
 
   @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     align-items: center;
-  }
-  @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
-    margin-left: 4rem;
   }
 `
 
