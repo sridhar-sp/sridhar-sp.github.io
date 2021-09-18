@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { NavbarContainer } from '../../pages/Landing/App.style'
 import { RouteLink, NavList, ThemeModeIcon, NavBar } from './Navbar.style'
 import { BiSun, BiMoon } from 'react-icons/bi'
+import { useLocation } from 'react-router-dom'
 
 const Navigationbar = ({ onChangeTheme = () => {}, theme }) => {
-  const [selectedRoute, setSelectedRoute] = useState('/')
+  const location = useLocation()
+  const [selectedRoute, setSelectedRoute] = useState(location.pathname)
 
   const Route = {
     Home: '/',
