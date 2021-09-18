@@ -90,11 +90,24 @@ const FaIconAttrStyles = ({ theme }) => {
   }
 }
 
-const Github = styled(FaGithub).attrs(FaIconAttrStyles)``
+const IconHoverStyle = `
+transition: transform 0.2s ease-in-out;
+:hover {
+  transform: scale(1.3);
+}
+`
 
-const Twitter = styled(FaTwitter).attrs(FaIconAttrStyles)``
+const Github = styled(FaGithub).attrs(FaIconAttrStyles)`
+  ${IconHoverStyle}
+`
 
-const Linkedin = styled(FaLinkedin).attrs(FaIconAttrStyles)``
+const Twitter = styled(FaTwitter).attrs(FaIconAttrStyles)`
+  ${IconHoverStyle}
+`
+
+const Linkedin = styled(FaLinkedin).attrs(FaIconAttrStyles)`
+  ${IconHoverStyle}
+`
 
 export {
   HomeContainer,

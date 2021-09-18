@@ -12,24 +12,28 @@ import {
   Linkedin,
   Github,
 } from './Home.style'
+import { homeScreenConfig } from 'config/Config'
+import { Anchor } from 'components/common/Common.style'
 const Home = ({ theme }) => {
   return (
     <ContentContainer>
       <HomeContainer>
         <ProfileImageContainer>
-          <ProfileImage src="https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg" />
+          <ProfileImage src={homeScreenConfig.profilePicUrl} />
         </ProfileImageContainer>
         <ProfileDescription>
-          <ProfileName>Sridhar Subramani</ProfileName>
-          <ShortBio>
-            Self-taught software developer with great problem-solving skills,
-            having 5+ years of craftsmanship in developing awesome android
-            applications.
-          </ShortBio>
+          <ProfileName>{homeScreenConfig.profileName}</ProfileName>
+          <ShortBio>{homeScreenConfig.profileShortDesc}</ShortBio>
           <SocialLinks>
-            <Github />
-            <Linkedin />
-            <Twitter />
+            <Anchor href={homeScreenConfig.socialLinks.github}>
+              <Github />
+            </Anchor>
+            <Anchor href={homeScreenConfig.socialLinks.linkedIn}>
+              <Linkedin />
+            </Anchor>
+            <Anchor href={homeScreenConfig.socialLinks.twitter}>
+              <Twitter />
+            </Anchor>
           </SocialLinks>
         </ProfileDescription>
       </HomeContainer>
