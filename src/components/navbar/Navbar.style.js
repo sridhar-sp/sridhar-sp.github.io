@@ -21,7 +21,6 @@ const NavBar = styled.div`
   }
 
   @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
-    flex-direction: column-reverse;
     flex-direction: row;
   }
 `

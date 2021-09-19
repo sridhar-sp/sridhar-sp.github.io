@@ -54,6 +54,7 @@ const ContentContainer = styled.div`
   }
 
   overflow-y: scroll;
+  padding: 0;
 `
 
 export { LandingPageContainer, NavbarContainer, ContentContainer, Constants }
