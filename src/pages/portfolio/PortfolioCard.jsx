@@ -7,16 +7,20 @@ import {
   PortfolioShortDescription,
 } from './PortfolioCard.style'
 
-const PortfolioCard = ({ title }) => {
+const PortfolioCard = ({ portfolio }) => {
+  const {
+    portfolioImageUrl,
+    portfolioTitle,
+    portfolioShortDescription,
+    portfolioExternalLink,
+  } = { ...portfolio }
   return (
-    <PortfolioCardContainer>
-      <PortfolioImage />
+    <PortfolioCardContainer href={portfolioExternalLink}>
+      <PortfolioImage imageUrl={portfolioImageUrl} />
       <PortfolioDescriptionContainer>
-        <PortfolioTitle>Portfolio card {title}</PortfolioTitle>
+        <PortfolioTitle>{portfolioTitle}</PortfolioTitle>
         <PortfolioShortDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          iaculis erat vel velit commodo, non interdum neque vulputate. Integer
-          euismod dolor non enim iaculis,
+          {portfolioShortDescription}
         </PortfolioShortDescription>
       </PortfolioDescriptionContainer>
     </PortfolioCardContainer>

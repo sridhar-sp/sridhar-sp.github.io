@@ -7,7 +7,7 @@ import About from '../about/About'
 import Contact from '../contact/Contact'
 import Home from '../home/Home'
 import Portfolio from '../portfolio/Portfolio'
-import { LandingPageContainer } from './App.style'
+import { LandingPageContainer, NavbarContainer } from './App.style'
 
 const App = () => {
   const [themeMode, setThemeMode] = useState('light')
@@ -19,7 +19,9 @@ const App = () => {
     <ThemeProvider theme={currentTheme}>
       <LandingPageContainer>
         <Router>
-          <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
+          <NavbarContainer>
+            <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
+          </NavbarContainer>
           <Switch>
             <Route path="/about">
               <About />

@@ -8,7 +8,7 @@ const PortfolioContainer = styled.div`
 `
 
 const PortfolioTitle = styled.h2`
-  color: ${({ theme }) => theme.colors.onBackground};
+  color: ${({ theme }) => theme.colors.primaryText};
   text-decoration: none;
   margin: 0;
   margin-bottom: 1rem;

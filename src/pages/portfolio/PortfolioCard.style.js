@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { Constants } from 'pages/Landing/App.style'
+import { Anchor } from 'components/common/Common.style'
 
-const PortfolioCardContainer = styled.div`
+const PortfolioCardContainer = styled(Anchor)`
   display: flex;
   flex-direction: column;
 
@@ -11,7 +12,9 @@ const PortfolioCardContainer = styled.div`
 
   transition: box-shadow 0.2s ease-in-out;
   :hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
   }
 
   @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
@@ -27,29 +30,31 @@ const PortfolioImage = styled.div`
   height: 75%;
   width: 100%;
 
-  background: url('https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg');
+  background: url(${({ imageUrl }) => imageUrl});
+
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 `
 
 const PortfolioDescriptionContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
 
   background: ${({ theme }) => theme.colors.navbar};
   padding: 1rem 2rem;
 `
 
 const PortfolioTitle = styled.h3`
-  color: ${({ theme }) => theme.colors.onBackground};
-  text-decoration: none;
+  color: ${({ theme }) => theme.colors.primaryText};
+  word-wrap: break-word;
 `
 const PortfolioShortDescription = styled.h4`
-  /* overflow: hidden; */
-  color: ${({ theme }) => theme.colors.onBackground};
-  text-decoration: none;
+  color: ${({ theme }) => theme.colors.secondaryText};
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-weight: 600;
 `
 
 export {

@@ -68,14 +68,15 @@ const ProfileDescription = styled.div`
 `
 
 const ProfileName = styled.h1`
-  color: ${({ theme }) => theme.colors.onBackground};
+  color: ${({ theme }) => theme.colors.primaryText};
   text-decoration: none;
   margin: 0;
 `
 
 const ShortBio = styled.h3`
-  color: ${({ theme }) => theme.colors.onBackground};
+  color: ${({ theme }) => theme.colors.secondaryText};
   margin: 0;
+  font-weight: 600;
 `
 
 const SocialLinks = styled.div`

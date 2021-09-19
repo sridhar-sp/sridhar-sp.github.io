@@ -14,6 +14,80 @@ const homeScreenConfig = {
 
 const aboutScreenConfig = {}
 
-const portfolioScreenConfig = {}
+const portfolioScreenConfig = {
+  title: 'Portfolio',
+  portfolios: [
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+    {
+      portfolioImageUrl:
+        'https://kavenyou.com/wp-content/uploads/2017/07/May-2-2.jpg',
+      portfolioTitle: 'Draw and Guess',
+      portfolioShortDescription: `A multi-player drawing game to play with your friends & family.
+      
+      This is a drawing game where one player draw a given word and others will try to guess the word. Each player will take a turn on drawing and guessing. The scores will be assigned based on how quick participant guessed the word and how well their drawing is understood by other players.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.draw',
+    },
+  ],
+}
 
 export { homeScreenConfig, aboutScreenConfig, portfolioScreenConfig }
