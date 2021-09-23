@@ -31,13 +31,7 @@ const Navigationbar = ({ onChangeTheme = () => {}, theme }) => {
         >
           Home
         </RouteLink>
-        <RouteLink
-          to={Route.About}
-          onClick={() => setSelectedRoute(Route.About)}
-          isSelected={Route.About === selectedRoute}
-        >
-          About
-        </RouteLink>
+
         <RouteLink
           to={Route.Portfolio}
           onClick={() => setSelectedRoute(Route.Portfolio)}

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { getTheme } from '../../theme/Themes'
 import Navbar from '../../components/navbar/Navbar'
-
+import About from '../about/About'
 import Contact from '../contact/Contact'
 import Home from '../home/Home'
 import Portfolio from '../portfolio/Portfolio'
@@ -23,6 +23,9 @@ const App = () => {
             <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
           </NavbarContainer>
           <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
             <Route path="/portfolio">
               <Portfolio />
             </Route>
