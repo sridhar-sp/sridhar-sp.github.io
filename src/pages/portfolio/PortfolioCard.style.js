@@ -26,8 +26,7 @@ const PortfolioCardContainer = styled(Anchor)`
 `
 
 const PortfolioImage = styled.div`
-  min-height: 15rem;
-  height: 75%;
+  min-height: 25rem;
   width: 100%;
 
   background: url(${({ imageUrl }) => imageUrl});
