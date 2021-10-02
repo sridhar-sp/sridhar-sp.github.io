@@ -19,7 +19,7 @@ const portfolioScreenConfig = {
   portfolios: [
     {
       portfolioImageUrl:
-        'https://firebasestorage.googleapis.com/v0/b/portfolio-930c6.appspot.com/o/public%2Fportfolio%2Fdraw_guess_preview_1.png?alt=media',
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/draw_guess_preview.webp',
       portfolioTitle: 'Draw and Guess',
       portfolioShortDescription:
         `A multi-player drawing game to play with your friends & family.` +
@@ -32,7 +32,7 @@ const portfolioScreenConfig = {
     },
     {
       portfolioImageUrl:
-        'https://firebasestorage.googleapis.com/v0/b/portfolio-930c6.appspot.com/o/public%2Fportfolio%2Fsort_algo_preview_2.png?alt=media',
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/sort_algo_preview.webp',
       portfolioTitle: 'Sorting visualizer',
       portfolioShortDescription:
         `This project shows a simple visual representation of the various sorting algorithms,` +
