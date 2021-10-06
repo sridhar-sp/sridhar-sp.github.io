@@ -19,7 +19,7 @@ const portfolioScreenConfig = {
   portfolios: [
     {
       portfolioImageUrl:
-        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/draw_guess_preview.webp',
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/draw_guess_preview.png',
       portfolioTitle: 'Draw and Guess',
       portfolioShortDescription:
         `A multi-player drawing game to play with your friends & family.` +
@@ -32,7 +32,7 @@ const portfolioScreenConfig = {
     },
     {
       portfolioImageUrl:
-        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/sort_algo_preview.webp',
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/sort_algo_preview.png',
       portfolioTitle: 'Sorting visualizer',
       portfolioShortDescription:
         `This project shows a simple visual representation of the various sorting algorithms,` +
