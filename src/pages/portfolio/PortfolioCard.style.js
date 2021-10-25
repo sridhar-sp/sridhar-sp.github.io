@@ -32,7 +32,7 @@ const PortfolioImage = styled.div`
   background: url(${({ imageUrl }) => imageUrl});
 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 `
 

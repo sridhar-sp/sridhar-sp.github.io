@@ -46,6 +46,24 @@ const portfolioScreenConfig = {
       portfolioExternalLink:
         'https://sridhar-sp.github.io/sorting-visualizer-algorithm/',
     },
+    {
+      portfolioImageUrl:
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/tic_tac_toe_preview.png',
+      portfolioTitle: 'Tic-tac-toe',
+      portfolioShortDescription:
+        `Tic-tac-toe game from markdown file. This is a learning attempt to see how interactive Github readme file can be.` +
+        `
+        
+        ` +
+        ` Checkout the backend code here. https://github.com/sridhar-sp/tic-tac-toe-backend` +
+        `
+        
+        ` +
+        `Read more about https://github.com/sridhar-sp/tic-tac-toe-backend#backstory` +
+        `. and this project was born out of that experiment.` +
+        ` Every data swap causes a re-render frequently and react handles it with ease.`,
+      portfolioExternalLink: 'https://github.com/sridhar-sp/tic-tac-toe',
+    },
   ],
 }
 
