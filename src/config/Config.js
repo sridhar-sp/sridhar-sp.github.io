@@ -55,14 +55,23 @@ const portfolioScreenConfig = {
         `
         
         ` +
-        ` Checkout the backend code here. https://github.com/sridhar-sp/tic-tac-toe-backend` +
+        ` Checkout the backend code here. https://github.com/sridhar-sp/tic-tac-toe-backend`,
+      portfolioExternalLink: 'https://github.com/sridhar-sp/tic-tac-toe',
+    },
+    {
+      portfolioImageUrl:
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/neumorphic_compose_preview.png',
+      portfolioTitle: 'Neumorphism using Jetpack Compose',
+      portfolioShortDescription:
+        `Neumorphism is a User Interface design style that started gaining in popularity in late 2019.` +
         `
         
         ` +
-        `Read more about https://github.com/sridhar-sp/tic-tac-toe-backend#backstory` +
-        `. and this project was born out of that experiment.` +
-        ` Every data swap causes a re-render frequently and react handles it with ease.`,
-      portfolioExternalLink: 'https://github.com/sridhar-sp/tic-tac-toe',
+        `It has two main components - an extruded element and a pressed one.` +
+        ` They are created by using a light and dark colors by applying drop shadow and inner-shadow respectively.
+        `,
+      portfolioExternalLink:
+        'https://github.com/sridhar-sp/compose-neumorphism',
     },
   ],
 }
