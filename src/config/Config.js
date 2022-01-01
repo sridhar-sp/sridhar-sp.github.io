@@ -3,7 +3,7 @@ const homeScreenConfig = {
     'https://firebasestorage.googleapis.com/v0/b/portfolio-930c6.appspot.com/o/public%2Fportfolio%2Fprofile_pic.jpeg?alt=media&token=30f83982-a90f-4e77-8a0e-26a4b80d7d86',
   profileName: 'Sridhar Subramani',
   profileShortDesc: `Self-taught software developer with great problem-solving skills,
-  having 5+ years of craftsmanship in developing awesome android
+  having 6+ years of craftsmanship in developing awesome android
   applications.`,
   socialLinks: {
     linkedIn: 'https://www.linkedin.com/in/sridharsp',
