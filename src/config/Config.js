@@ -73,6 +73,19 @@ const portfolioScreenConfig = {
       portfolioExternalLink:
         'https://github.com/sridhar-sp/compose-neumorphism',
     },
+    {
+      portfolioImageUrl:
+        'https://raw.githubusercontent.com/sridhar-sp/sridhar-sp.github.io/main/assets/images/numerology_preview.png',
+      portfolioTitle: 'Numerology calculator',
+      portfolioShortDescription:
+        `Draw meaning from different numbers from your name and date of birth` +
+        `
+        
+        ` +
+        `The app user interface is built using Jetpack compose and uses "neumorphic" design model.`,
+      portfolioExternalLink:
+        'https://play.google.com/store/apps/details?id=com.gandiva.numerology',
+    },
   ],
 }
 
