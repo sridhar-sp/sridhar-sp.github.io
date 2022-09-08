@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
-import { RouteLink, NavList, ThemeModeIcon, NavBar } from './Navbar.style'
-import { BiSun, BiMoon } from 'react-icons/bi'
-import { useLocation } from 'react-router-dom'
+import React, { useState } from "react";
+import { RouteLink, NavList, ThemeModeIcon, NavBar, RouteLinkText } from "./Navbar.style";
+import { BiSun, BiMoon } from "react-icons/bi";
+import { useLocation } from "react-router-dom";
 
 const Navigationbar = ({ onChangeTheme = () => {}, theme }) => {
-  const location = useLocation()
-  const [selectedRoute, setSelectedRoute] = useState(location.pathname)
+  const location = useLocation();
+  const [selectedRoute, setSelectedRoute] = useState(location.pathname);
 
   const Route = {
-    Home: '/',
-    About: '/about',
-    Portfolio: '/portfolio',
-  }
+    Home: "/",
+    About: "/about",
+    Portfolio: "/portfolio",
+  };
 
   const getThemeIcon = (isDarkTheme, fillColor, iconSize) => {
     if (isDarkTheme) {
-      return <BiSun fill={fillColor} size={iconSize} />
+      return <BiSun fill={fillColor} size={iconSize} />;
     } else {
-      return <BiMoon fill={fillColor} size={iconSize} />
+      return <BiMoon fill={fillColor} size={iconSize} />;
     }
-  }
+  };
 
   return (
     <NavBar>
@@ -29,7 +29,7 @@ const Navigationbar = ({ onChangeTheme = () => {}, theme }) => {
           onClick={() => setSelectedRoute(Route.Home)}
           isSelected={Route.Home === selectedRoute}
         >
-          Home
+          <RouteLinkText>Home</RouteLinkText>
         </RouteLink>
 
         <RouteLink
@@ -37,14 +37,14 @@ const Navigationbar = ({ onChangeTheme = () => {}, theme }) => {
           onClick={() => setSelectedRoute(Route.Portfolio)}
           isSelected={Route.Portfolio === selectedRoute}
         >
-          Portfolio
+          <RouteLinkText>Portfolio</RouteLinkText>
         </RouteLink>
       </NavList>
       <ThemeModeIcon onClick={() => onChangeTheme()}>
-        {getThemeIcon(theme.theme === 'dark', theme.colors.onBackground, 24)}
+        {getThemeIcon(theme.theme === "dark", theme.colors.onBackground, 24)}
       </ThemeModeIcon>
     </NavBar>
-  )
-}
+  );
+};
 
-export default Navigationbar
+export default Navigationbar;

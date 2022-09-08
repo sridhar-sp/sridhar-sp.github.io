@@ -1,6 +1,7 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import { Constants } from 'pages/Landing/App.style'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { Constants } from "pages/Landing/App.style";
+import { Body1 } from "common/styles";
 
 const ThemeModeIcon = styled.div`
   justify-self: flex-end;
@@ -9,7 +10,7 @@ const ThemeModeIcon = styled.div`
   @media (max-width: ${Constants.PORTRAIT_WIDTH}) {
     align-self: center;
   }
-`
+`;
 
 const NavBar = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const NavBar = styled.div`
   @media (min-width: ${Constants.LANDSCAPE_WIDTH}) {
     flex-direction: row;
   }
-`
+`;
 
 const NavList = styled.div`
   display: flex;
@@ -46,7 +47,7 @@ const NavList = styled.div`
     min-width: 14rem; // 1 rem padding in Theme Icon. Total 15 rem left side navigation bar width
     margin-left: 5rem;
   }
-`
+`;
 
 const RouteLink = styled(Link)`
   text-decoration: none;
@@ -60,16 +61,17 @@ const RouteLink = styled(Link)`
   }
 
   :hover {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
   }
-  transition: letter-spacing 0.1s ease-in;
+  transition: letter-spacing 0.1s ease-in-out;
 
   color: ${({ theme }) => theme.colors.primaryText};
 
-  /* color: ${({ theme, isSelected }) =>
-    isSelected ? theme.colors.primaryText : theme.colors.secondaryText}; */
+  /* color: ${({ theme, isSelected }) => (isSelected ? theme.colors.primaryText : theme.colors.secondaryText)}; */
 
   ${({ isSelected }) => isSelected && `font-weight: bold;`}
-`
+`;
 
-export { RouteLink, NavList, ThemeModeIcon, NavBar }
+export const RouteLinkText = styled(Body1)``;
+
+export { RouteLink, NavList, ThemeModeIcon, NavBar };
