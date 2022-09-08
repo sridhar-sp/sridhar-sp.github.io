@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { getTheme } from '../../theme/Themes'
 import Navbar from '../../components/navbar/Navbar'
@@ -22,20 +22,12 @@ const App = () => {
           <NavbarContainer>
             <Navbar onChangeTheme={toggleTheme} theme={currentTheme} />
           </NavbarContainer>
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home theme={currentTheme} />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/about" element={<About />}/>
+            <Route path="/portfolio" element={<Portfolio />}/>
+            <Route path="/contact"  element={<Contact />}/>
+            <Route path="/"  element={<Home theme={currentTheme} />}/>
+          </Routes>
         </Router>
       </LandingPageContainer>
     </ThemeProvider>
