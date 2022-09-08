@@ -1,5 +1,5 @@
-import React from 'react'
-import { ContentContainer } from '../Landing/App.style'
+import React from "react";
+import { ContentContainer } from "../Landing/App.style";
 import {
   HomeContainer,
   ProfileImageContainer,
@@ -9,11 +9,12 @@ import {
   ShortBio,
   SocialLinks,
   Twitter,
+  Medium,
   Linkedin,
   Github,
-} from './Home.style'
-import { homeScreenConfig } from 'config/Config'
-import { Anchor } from 'components/common/Common.style'
+} from "./Home.style";
+import { homeScreenConfig } from "config/Config";
+import { Anchor } from "components/common/Common.style";
 const Home = ({ theme }) => {
   return (
     <ContentContainer>
@@ -31,6 +32,9 @@ const Home = ({ theme }) => {
             <Anchor href={homeScreenConfig.socialLinks.linkedIn}>
               <Linkedin />
             </Anchor>
+            <Anchor href={homeScreenConfig.socialLinks.medium}>
+              <Medium />
+            </Anchor>
             <Anchor href={homeScreenConfig.socialLinks.twitter}>
               <Twitter />
             </Anchor>
@@ -38,7 +42,7 @@ const Home = ({ theme }) => {
         </ProfileDescription>
       </HomeContainer>
     </ContentContainer>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
