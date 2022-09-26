@@ -1,6 +1,6 @@
 const homeScreenConfig = {
   profilePicUrl:
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-930c6.appspot.com/o/public%2Fportfolio%2Fprofile_pic.jpeg?alt=media&token=30f83982-a90f-4e77-8a0e-26a4b80d7d86",
+    "https://media-exp1.licdn.com/dms/image/C5603AQGVIiwttuV_Qg/profile-displayphoto-shrink_800_800/0/1626363420185?e=1669852800&v=beta&t=C5pk22oUIg4ygE45Wr3Yk1kStyUisIejP2HGzVwfKFU",
   profileName: "Sridhar Subramani",
   profileShortDesc: `Self-taught software developer with great problem-solving skills,
   having 6+ years of craftsmanship in developing awesome android
