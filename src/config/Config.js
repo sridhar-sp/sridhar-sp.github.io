@@ -2,7 +2,7 @@ const homeScreenConfig = {
   profilePicUrl:
     "https://firebasestorage.googleapis.com/v0/b/portfolio-930c6.appspot.com/o/public%2Fportfolio%2Fprofile_pic.jpeg?alt=media",
   profileName: "Sridhar Subramani",
-  profileShortDesc: `I am an experienced Android developer with 7 years of expertise in crafting high-quality Android applications. I started my
+  profileShortDesc: `I am an experienced Android developer with around 8 years of expertise in crafting high-quality Android applications. I started my
   career in 2015 and since then I have gained proficiency in developing both system apps, third party apps and hybrid apps. I
   have also worked on back-end systems and developed a couple of hobby projects, including a multiplayer drawing game. I'm
   currently exploring other domains to broaden my understanding of technology.`,
